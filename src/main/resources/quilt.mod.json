@@ -1,0 +1,36 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "ch.andre601",
+		"id": "foxes_eat_eggs",
+		"version": "${version}",
+		"metadata": {
+			"name": "Foxes Eat Eggs",
+			"description": "A simple mods that lets foxes pick up and eat eggs.",
+			"contributors": {
+				"Andre_601": "Owner"
+			},
+			"contact": {
+				"homepage": "https://andre601.ch",
+				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
+				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+			},
+			"icon": "assets/foxes_eat_eggs/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "ch.andre601.foxes_eat_eggs.FoxesEatEggs"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.23.1"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			}
+		]
+	},
+	"mixin": "foxes_eat_eggs.mixin.json"
+}

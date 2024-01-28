@@ -1,0 +1,3 @@
+# Foxes Eat Eggs
+
+A simple mod that adds the ability for Foxes to pickup and eat eggs... Don't ask me why Mojang hasn't implemented this themself...
