@@ -15,6 +15,11 @@
 				"issues": "https://github.com/Andre601/FoxesEatEggs/issues",
 				"sources": "https://github.com/Andre601/FoxesEatEggs"
 			},
+			"license": {
+				"name": "MIT",
+				"id": "MIT",
+				"url": "https://github.com/Andre601/FoxesEatEggs/blob/master/LICENSE"
+			},
 			"icon": "assets/foxes_eat_eggs/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
@@ -28,7 +33,7 @@
 			},
 			{
 				"id": "minecraft",
-				"versions": ">=1.20"
+				"versions": "1.20.4"
 			}
 		]
 	},

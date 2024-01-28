@@ -44,9 +44,8 @@ abstract class MixinFoxEntity extends AnimalEntity implements VariantProvider<Fo
 		Item item = itemStack.getItem();
 		ItemStack stack = this.getEquippedStack(EquipmentSlot.MAINHAND);
 
-		cir.setReturnValue(
-			stack.isEmpty() || this.eatingTime > 0 && (item.isFood() || (item instanceof EggItem)) && (!stack.getItem().isFood() && !(stack.getItem() instanceof EggItem))
-		);
+		if(stack.isEmpty() || this.eatingTime > 0 && (item.isFood() || (item instanceof EggItem)) && (!stack.getItem().isFood() && !(stack.getItem() instanceof EggItem)))
+			cir.setReturnValue(true);
 	}
 
 	@ModifyExpressionValue(
